@@ -48,6 +48,8 @@ def str2sha1(string):
 	return hashlib.sha1(str(string).encode('utf-8')).hexdigest()
 
 result = decrypt(cipher, matrix)
+print('Method: Hill cipher')
+print('Key: ', matrix)
 print('Original messages:  ', cipher.lower())
 print('Decrypted messages: ', result)
 print('Answer and its SHA1:')
